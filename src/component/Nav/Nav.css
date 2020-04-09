@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    height: 50px;
+    border-bottom: 2px solid rgb(243,243,243)
+}
+a{
+    color: rgb(120,144,156);
+    text-decoration: none;
+    cursor: pointer;
+}
+.register{
+    float: right;
+    line-height: 50px;
+    margin-right: 50px;
+}
+.registerBox{
+    display: none;
+}
+.Hidden{
+    animation: hiding 2s forwards;
+}
+.Showen{
+    display: block;
+    animation: showing 2s forwards;
+}
+@keyframes showing{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes hiding{
+    0%{
+        opacity: 1;
+        display: block
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
