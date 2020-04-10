@@ -5,7 +5,8 @@ export default class Nav extends Component {
     constructor(props){
         super(props)
         this.state={
-            BoxState:'registerBox'
+            BoxStateBg:'initRegisterBox',
+            BoxClass:''
         }
     }
     render() {
@@ -19,18 +20,20 @@ export default class Nav extends Component {
                     &ensp;
                     <a onClick={this.registerShow}>登录</a>
                 </div>
-                <RegisterBox className={this.state.BoxState} onClick={this.registerHide}></RegisterBox>
+                <RegisterBox className={this.state.BoxStateBg} onClick={this.registerHide} BoxClass={this.state.BoxClass}/>
             </div>
         )
     }
     registerShow = () => {
         this.setState({
-            BoxState:'Showen'
+            BoxStateBg:'Showen',
+            BoxClass:'BoxShow'
         })
     }
     registerHide= ()=>{
         this.setState({
-            BoxState:'Hidden'
+            BoxStateBg:'Hidden',
+            BoxClass:'BoxHide'
         })
     }
 }
