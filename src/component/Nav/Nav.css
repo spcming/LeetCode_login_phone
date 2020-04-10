@@ -106,3 +106,71 @@ a{
         transform: translateY(0);
     }
 }
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.eot?7kkyc2');
+    src: url('./fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('./fonts/icomoon.ttf?7kkyc2') format('truetype'), url('fonts/icomoon.woff?7kkyc2') format('woff'), url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.registerInput{
+    font-family: icomoon;
+}
+.registerSelectCountry{
+    position: relative;
+    display: block;
+    float: left;
+    width: 70px;
+    cursor: pointer;
+    user-select: none;
+}
+.registerSelectCountry:hover{
+    color: rgb(45,181,93);
+}
+.registerSelectCountry::after{
+    content: '';
+    top: 11px;
+    left: 75px;;
+    position: absolute;
+    border: 1px solid #ccc;
+    height: 20px;
+}
+.registerInput i{
+    float: right;
+    font-style: normal;
+    position: relative;
+}
+.registerPhone{
+    border: none;
+    outline:none;
+    position: relative;
+    left: 15px;;
+    height: 30px;
+    width: 340px;
+    font: 15px/30px 微软雅黑;
+}
+.registerCode{
+    border: none;
+    outline:none;
+    position: relative;
+    left: 10px;;
+    height: 30px;
+    width: 200px;
+    font: 15px/30px 微软雅黑;
+}
+.registerSendCodeDisable{
+    display: block;
+    pointer-events: none;
+    float: right;
+    margin-right: 20px;
+    user-select: none;
+    color: rgb(196,196,196);
+}
+.registerSendCodeuse{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    user-select: none;
+    color: rgb(45,181,93);
+}
